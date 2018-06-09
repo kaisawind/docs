@@ -47,3 +47,7 @@ docker cp /www/runoob 96f7436b8:/www
 ### docker ps
 
 显示正在运行的容器
+
+### docker save busybox > busybox.tar
+
+保存镜像到本地文件

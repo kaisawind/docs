@@ -162,7 +162,7 @@ build-setting选项里面选择要build的github库路径
 
 - docker pull
 
-- docker tag
+- docker tag kaisawind/kube-scheduler-amd64 k8s.gcr.io/kube-scheduler-amd64
 
 #### 3.2.2 kubeadm init需要的镜像
 
@@ -443,4 +443,14 @@ status: {}
 
 ```bash
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+```
+
+```bash
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chwon $(id -u):$(id -g) $HOME/.kube/config
+```
+
+```bash
+kubeadm join 192.168.1.16 --token kmau6d.g5057mxjhx2uy760 --discovery-token-ca-cert-hash sha256:4163fe5c8fc00829bc4fb09ccaee5757896a32b1bda9ffe33ec8c55eb9234ea1
 ```
