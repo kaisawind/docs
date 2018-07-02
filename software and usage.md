@@ -20,3 +20,5 @@
 |16. |pushgateway|||
 |17. |alertmanager|||
 |18. |busyboxplus|||
+|19. |nvidia-docker|||
+|20. |s3|||
