@@ -67,7 +67,7 @@ if [ ! -d "$goPath/src/golang.org/x" ]; then
     mkdir -p "$goPath/src/golang.org/x"
 fi
 
-cd "$goPath/src/golang.org"
+cd "$goPath/src/golang.org/x"
 pwd
 
 echo "****************golang.org/x/tools*************"
