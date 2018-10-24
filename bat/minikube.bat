@@ -1,0 +1,1 @@
+minikube start --registry-mirror=https://registry.docker-cn.com --vm-driver="hyperv" --hyperv-virtual-switch="minikube"
