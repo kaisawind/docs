@@ -1,0 +1,48 @@
+broker: 123.185.223.23
+port: 36242
+clientID: lock-001|securemode=3,signmethod=hmacsha1,timestamp=12345
+username: bf42la991ts1kpqqaq1g&bf3a0g8dv6bur4rct9ag
+password: 044167cb2076702293f82d46a03e26d871396f07
+topic: status 
+
+加载环境变量：
+	/home/zs/mywork/motor/mycode/motor    : sourceCode path
+	. /opt/fsl-imx-x11/4.1.15-2.1.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi 
+	make
+
+	sudo minicom
+	/forlinx/shell/wifi.sh -i 8723 -s yunxingtianxia -p qazwsxedcrfv
+	scp -r zs@192.168.1.129:/home/zs/mywork/motor/mycode/motor/motor /home/root/motor/
+	cd /home/root/motor/
+	./run.sh
+	
+
+{"Action":1, "Value":"1"} :start motor
+{"Action":2, "Value":"1"} :director 
+{"Action":3, "Value":"10"}:speed
+
+
+cd 1.10.1/
+docker load < busybox.tar
+docker load < cni-v2.0.4.tar
+docker load < defaultbackend_1.3.tar
+docker load < etcd-amd64_3.1.12.tar
+docker load < flannel-0.9.1.tar
+docker load < k8s-dns-dnsmasq-nanny-amd64-1.14.8.tar
+docker load < k8s-dns-kube-dns-amd64.tar
+docker load < k8s-dns-sidecar-amd64.tar
+docker load < kube-apiserver-amd64_v1.10.1.tar
+docker load < kube-controller-manager-amd64_v1.10.1.tar
+docker load < kube-proxy-amd64_v1.10.1.tar
+docker load < kubernetes-dashboard-amd64.tar
+docker load < kube-scheduler-amd64_v1.10.1.tar
+docker load < nfs-client-provisioner.tar
+docker load < node-v3.0.5.tar
+docker load < pause-amd64_3.1.tar
+docker load < tiller-v2.8.2.tar
+
+kubectl delete clusterrolebindings iotx-foundry-manager
+kubectl delete clusterrolebindings iotx-foundry-alert
+kubectl delete namespace iot
+
+kubectl delete pv $(kubectl get pv -n kube-public | grep adax/data-userstorage | awk '{print $1}') -n kube-public

@@ -5,3 +5,17 @@ wget https://mirrors.aliyun.com/centos/7.5.1804/os/x86_64/Packages/yum-metadata-
 wget https://mirrors.aliyun.com/centos/7.5.1804/os/x86_64/Packages/yum-utils-1.1.31-45.el7.noarch.rpm
 wget https://mirrors.aliyun.com/centos/7.5.1804/os/x86_64/Packages/yum-updateonboot-1.1.31-45.el7.noarch.rpm
 wget https://mirrors.aliyun.com/centos/7.5.1804/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.31-45.el7.noarch.rpm
+#wget https://mirrors.aliyun.com/centos/7.5.1804/os/x86_64/Packages/wget-1.14-15.el7_4.1.x86_64.rpm
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/containernetworking-cni-0.6.0-3.el7.x86_64.rpm
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-1.10.0-1.el7.x86_64.rpm            
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-1.10.3-0.el7.x86_64.rpm            
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-client-1.10.0-1.el7.x86_64.rpm     
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-client-1.10.3-0.el7.x86_64.rpm     
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-kubeadm-1.10.0-1.el7.x86_64.rpm    
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-kubeadm-1.10.3-0.el7.x86_64.rpm    
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-master-1.10.0-1.el7.x86_64.rpm     
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-master-1.10.3-0.el7.x86_64.rpm     
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-node-1.10.0-1.el7.x86_64.rpm       
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-node-1.10.3-0.el7.x86_64.rpm       
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-unit-test-1.10.0-1.el7.x86_64.rpm  
+wget https://mirrors.aliyun.com/centos/7.5.1804/virt/x86_64/kubernetes110/kubernetes-unit-test-1.10.3-0.el7.x86_64.rpm
